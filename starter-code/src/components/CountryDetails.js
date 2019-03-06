@@ -11,12 +11,11 @@ class Countries extends Component{
   render(){
     return( this.state.countries.map((item, key) =>{
       return(
-        <div key={key}>
-            <li>{item.name.common}</li>
+        <div className='col-xs-5 col-md-2' key={key}>
+        <li className='list-group-item list-group-item-action active mb-1'><Link to='/countries'>{item.name.common}</Link></li>
         </div>
       )
     })
-
     )
   }
 }
